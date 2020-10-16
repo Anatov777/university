@@ -2,8 +2,71 @@
 @import "libs";
 @import "fonts";
 
+$black: #131313;
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  display: flex;
+  max-width: 1920px;
+  font-family: Whitney;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+header {
+  max-height: 80px;
+  .header__content {
+    display: flex;
+    align-items: center;
+    .logo {
+      height: 100%;
+    }
+    .main-nav {
+      margin-left: 37px;
+      .main-nav__list {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        li {
+          position: relative;
+          & > a {
+            text-decoration: none;
+            color: $black;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+          }
+          &:not(:first-child)::before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background-color: $black;
+            border-radius: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            margin-left: -9px;
+          }
+        }
+        li + li {
+          margin-left: 20px;
+        }
+      }
+    }
+    .notifications-icon {
+      margin-left: 38px;
+    }
+    .avatar {
+      margin-left: 30px;
+    }
+  }
 }
 
 @import "media";
