@@ -6,6 +6,11 @@ html(lang="en")
     title Document
     link(rel="stylesheet", href="css/style.min.css")
   body
+    .alert
+      .alert__text You have 1 expired deadline and 11 deadlines expires soon.
+      a(href="#").alert__link View To-Do List
+      img(src="img/cross.svg", alt="Close").close
+          
     header
       .container
         .header__content
@@ -28,8 +33,109 @@ html(lang="en")
                 a(href="#") My appointments
               li
                 a(href="#") My documents
-          img(src="img/power.webp", alt="Notifications").notifications-icon
+          .notifications
+            img(src="img/power.webp", alt="Notifications").notifications__icon
+            .notifications__content
+              .notifications__text notifications
           img(src="img/Account.webp", alt="Avatar").avatar
+    section.search-wrapper
+      .container
+        .search-wrapper__content
+          h2.search__title Welcome to Student Hub
+          .search
+            input(type="text").search__input
+            i.search-icon
+    section.navigation-btns
+      .container
+        nav.nav-by-btns
+          a(href="#").tile My Classes
+          a(href="#").tile My Cases
+          a(href="#").tile My Finances
+          a(href="#").tile My To-Do List
+          a(href="#").tile My Appointments
+          a(href="#").tile My Documents
+    section.events
+      .container
+        .events__content
+          .title-wrapper
+            h2 Upcoming Events
+            a(href="#") View all Events
+          .slider
+            .slider__item
+              .event-card
+                .event-card__text
+                  .event-card__title Time Management Student Success
+                  .event-card__subtitle Workshop
+                .note
+                  .note__date 5/13/2020
+                  .note__time 19 PM — 22 PM
+                    span.place Library
+            .slider__item
+              .event-card
+                .event-card__text
+                  .event-card__title Wednesday&nbsp;Student Wnd-Down Free Meditation 
+                  .event-card__subtitle Online talks
+                .note
+                  .note__date 5/13/2020
+                  .note__time 19 PM — 22 PM
+                    span.place Library
+            .slider__item
+              .event-card
+                .event-card__text
+                  .event-card__title Staying job ready after Covid-19
+                  .event-card__subtitle Online-lecture
+                .note
+                  .note__date 5/13/2020
+                  .note__time 19 PM — 22 PM
+                    span.place Library
+            .slider__item
+              .event-card
+                .event-card__text
+                  .event-card__title Time Management Student Success
+                  .event-card__subtitle Workshop
+                .note
+                  .note__date 5/13/2020
+                  .note__time 19 PM — 22 PM
+                    span.place Library
+    section.news
+      .container
+        .title-wrapper
+            h2 News
+            a(href="#") View all News
+        .news__content
+          .news__item
+            img(src="img/news1.webp", alt="News 1")
+            .news__title Feature
+            .news__text When is Wakanda: Professors, alumni partner with Oakland museum to host Afrofuturism...
+            .news__date May 3, 2020
+          .news__item
+            img(src="img/news2.webp", alt="News 1")
+            .news__title Feature
+            .news__text A Holistic Approach to Student Advising
+            .news__date May 3, 2020
+          .news__item
+            img(src="img/news3.webp", alt="News 1")
+            .news__title Feature
+            .news__text Cal State East Bay faculty, students spend month in Okinawa capturing histories
+            .news__date May 3, 2020
+        a(href="#").more-link More News
+    footer.footer
+      .footer__top
+        .container
+          img(src="img/Logo.webp", alt="Logo").logo
+          .address 25800 Carlos Bee Boulevard | Hayward, CA 94542<br>510-885-3000
+      .footer__bot
+        .container
+          .copyright © 2020 California State University, East Bay. All rights reserved.
+          .socials
+            .socials__item Facebook
+            .socials__item Twitter
+            .socials__item Instagram
+            .socials__item Pinterest
+
+            
+
+                
     
 
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")

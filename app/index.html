@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.min.css"/>
   </head>
   <body>
+    <div class="alert">
+      <div class="alert__text">You have 1 expired deadline and 11 deadlines expires soon.</div><a class="alert__link" href="#">View To-Do List</a><img class="close" src="img/cross.svg" alt="Close"/>
+    </div>
     <header>
       <div class="container">
         <div class="header__content"><img class="logo" src="img/Logo.webp" alt="Logo"/>
@@ -21,10 +24,131 @@
               <li><a href="#">My appointments</a></li>
               <li><a href="#">My documents</a></li>
             </ul>
-          </nav><img class="notifications-icon" src="img/power.webp" alt="Notifications"/><img class="avatar" src="img/Account.webp" alt="Avatar"/>
+          </nav>
+          <div class="notifications"><img class="notifications__icon" src="img/power.webp" alt="Notifications"/>
+            <div class="notifications__content">
+              <div class="notifications__text">notifications</div>
+            </div>
+          </div><img class="avatar" src="img/Account.webp" alt="Avatar"/>
         </div>
       </div>
     </header>
+    <section class="search-wrapper">
+      <div class="container">
+        <div class="search-wrapper__content">
+          <h2 class="search__title">Welcome to Student Hub</h2>
+          <div class="search">
+            <input class="search__input" type="text"/><i class="search-icon"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="navigation-btns">
+      <div class="container">
+        <nav class="nav-by-btns"><a class="tile" href="#">My Classes</a><a class="tile" href="#">My Cases</a><a class="tile" href="#">My Finances</a><a class="tile" href="#">My To-Do List</a><a class="tile" href="#">My Appointments</a><a class="tile" href="#">My Documents</a></nav>
+      </div>
+    </section>
+    <section class="events">
+      <div class="container">
+        <div class="events__content">
+          <div class="title-wrapper">
+            <h2>Upcoming Events</h2><a href="#">View all Events</a>
+          </div>
+          <div class="slider">
+            <div class="slider__item">
+              <div class="event-card">
+                <div class="event-card__text">
+                  <div class="event-card__title">Time Management Student Success</div>
+                  <div class="event-card__subtitle">Workshop</div>
+                </div>
+                <div class="note">
+                  <div class="note__date">5/13/2020</div>
+                  <div class="note__time">19 PM — 22 PM<span class="place">Library</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="event-card">
+                <div class="event-card__text">
+                  <div class="event-card__title">Wednesday&nbsp;Student Wnd-Down Free Meditation </div>
+                  <div class="event-card__subtitle">Online talks</div>
+                </div>
+                <div class="note">
+                  <div class="note__date">5/13/2020</div>
+                  <div class="note__time">19 PM — 22 PM<span class="place">Library</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="event-card">
+                <div class="event-card__text">
+                  <div class="event-card__title">Staying job ready after Covid-19</div>
+                  <div class="event-card__subtitle">Online-lecture</div>
+                </div>
+                <div class="note">
+                  <div class="note__date">5/13/2020</div>
+                  <div class="note__time">19 PM — 22 PM<span class="place">Library</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="event-card">
+                <div class="event-card__text">
+                  <div class="event-card__title">Time Management Student Success</div>
+                  <div class="event-card__subtitle">Workshop</div>
+                </div>
+                <div class="note">
+                  <div class="note__date">5/13/2020</div>
+                  <div class="note__time">19 PM — 22 PM<span class="place">Library</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="container">
+        <div class="title-wrapper">
+          <h2>News</h2><a href="#">View all News</a>
+        </div>
+        <div class="news__content">
+          <div class="news__item"><img src="img/news1.webp" alt="News 1"/>
+            <div class="news__title">Feature</div>
+            <div class="news__text">When is Wakanda: Professors, alumni partner with Oakland museum to host Afrofuturism...</div>
+            <div class="news__date">May 3, 2020</div>
+          </div>
+          <div class="news__item"><img src="img/news2.webp" alt="News 1"/>
+            <div class="news__title">Feature</div>
+            <div class="news__text">A Holistic Approach to Student Advising</div>
+            <div class="news__date">May 3, 2020</div>
+          </div>
+          <div class="news__item"><img src="img/news3.webp" alt="News 1"/>
+            <div class="news__title">Feature</div>
+            <div class="news__text">Cal State East Bay faculty, students spend month in Okinawa capturing histories</div>
+            <div class="news__date">May 3, 2020</div>
+          </div>
+        </div><a class="more-link" href="#">More News</a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container"><img class="logo" src="img/Logo.webp" alt="Logo"/>
+          <div class="address">25800 Carlos Bee Boulevard | Hayward, CA 94542<br>510-885-3000</div>
+        </div>
+      </div>
+      <div class="footer__bot">
+        <div class="container">
+          <div class="copyright">© 2020 California State University, East Bay. All rights reserved.</div>
+          <div class="socials">
+            <div class="socials__item">Facebook</div>
+            <div class="socials__item">Twitter</div>
+            <div class="socials__item">Instagram</div>
+            <div class="socials__item">Pinterest</div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
