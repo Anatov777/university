@@ -1,0 +1,90 @@
+header
+  .container
+    .header__content
+      a(href="index.html")
+        img(src="img/Logo.webp" alt="Logo").logo
+      nav.main-nav
+        ul.main-nav__list
+          li
+            a(href="#") News
+          li
+            a(href="#") Events
+          li
+            a(href="#") My classes
+          li
+            a(href="#") My cases
+          li
+            a(href="#") My finances
+          li
+            a(href="to-do.html") My to-do list
+          li
+            a(href="#") My appointments
+          li
+            a(href="#") My documents
+      .notifications
+        img(src="img/power.webp" alt="Notifications").notifications__icon
+        span.notifications__nums
+        .notifications__content
+          .notifications__empty No Notifications
+          .notifications__header
+            .notifications__title Notifications
+            .notifications__number 12
+          ul.notifications__list#inline-popups
+            li
+              a(href="#test-popup-1" data-effect="mfp-zoom-in").expired Library Hold!
+              #test-popup-1.white-popup.mfp-with-anim.mfp-hide
+                .popup-type Action
+                .popup-text Please pay overdue account balance to restore registration access and university services. View your account balance online through MyCSUEB. Contact Student Financial Services at (510-885-3767) if you have any questions.
+            li
+              a(href="#test-popup-2" data-effect="mfp-zoom-in") Past Due Account
+              #test-popup-2.white-popup.mfp-with-anim.mfp-hide
+                .popup-type Action
+                .popup-title Fall Final Transcripts - Grad
+                .popup-text Please accept your admission in MyCSUEB by the deadline to secure your place in the entering class. This is a requirement of your admission. <p>Go to the MyCSUEB applicant tab and select Accept Admission (in the list of links on the left) to complete this.</p>
+            li
+              a(href="#test-popup-3" data-effect="mfp-zoom-in") Probation
+              #test-popup-3.white-popup.mfp-with-anim.mfp-hide
+                .popup-type Action
+                .popup-text Please pay overdue account balance to restore registration access and university services. View your account balance online through MyCSUEB. Contact Student Financial Services at (510-885-3767) if you have any questions.
+            li
+              a(href="#test-popup-4" data-effect="mfp-zoom-in") Past Due Account
+              #test-popup-4.white-popup.mfp-with-anim.mfp-hide
+                .popup-type Action
+                .popup-title Fall Final Transcripts - Grad
+                .popup-text Please accept your admission in MyCSUEB by the deadline to secure your place in the entering class. This is a requirement of your admission. <p>Go to the MyCSUEB applicant tab and select Accept Admission (in the list of links on the left) to complete this.</p>
+            li
+              a(href="#test-popup-5" data-effect="mfp-zoom-in") Probation
+              #test-popup-5.white-popup.mfp-with-anim.mfp-hide
+                .popup-type Action
+                .popup-text Please pay overdue account balance to restore registration access and university services. View your account balance online through MyCSUEB. Contact Student Financial Services at (510-885-3767) if you have any questions.
+      .profile
+        img(src="img/Account.webp" alt="Avatar").avatar
+        .profile__content
+          .profile__item My Account
+          .profile__item User Settings
+          .profile__item User Profile
+          .profile__item Contact Support
+          .profile__item News
+      //- img(src="img/burger.svg", alt="Burger Menu").burger
+      .burger-menu
+        input(type="checkbox")#burger-menu__toggle
+        label(for="burger-menu__toggle").burger-menu__btn
+          span
+        nav.main-nav
+          ul.main-nav__list
+            li
+              a(href="#") News
+            li
+              a(href="#") Events
+            li
+              a(href="#") My classes
+            li
+              a(href="#") My cases
+            li
+              a(href="#") My finances
+            li
+              a(href="to-do.html") My to-do list
+            li
+              a(href="#") My appointments
+            li
+              a(href="#") My documents

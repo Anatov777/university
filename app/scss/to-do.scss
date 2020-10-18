@@ -1,0 +1,130 @@
+@import "vars";
+
+.to-do-list {
+  padding: 80px 0 100px 0;
+  .title-wrapper {
+    .title-notes {
+      display: flex;
+      gap: 30px;
+    }
+  }
+  .filter {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    button {
+      padding: 8px 20px;
+      background: $white;
+      border: 2px solid $grey;
+      border-radius: 10px;
+      color: $black;
+      outline: none;
+      cursor: pointer;
+      font-weight: 300;
+      font-size: 18px;
+      height: 39px;
+    }
+    button.active {
+      border: 2px solid $red;
+      color: $red;
+    }
+  }
+  .to-do-list__content {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 35px;
+    column-gap: 40px;
+    .to-do-card {
+      background: $white;
+      border: 1px solid #ededed;
+      box-shadow: 0px 15px 50px rgba(152, 152, 152, 0.1);
+      border-radius: 20px;
+      max-width: 560px;
+      max-height: 222px;
+      padding: 25px 30px 30px 30px;
+      cursor: pointer;
+      .to-do-card__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        min-height: 29px;
+        .sender {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 21px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          color: $red;
+        }
+        .sender.expired {
+          color: $black;
+        }
+        .expire-alert {
+          display: none;
+          background: $black;
+          border-radius: 15px;
+          padding: 4px 14px;
+          color: $white;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 21px;
+          letter-spacing: 0.03em;
+        }
+        .expire-alert.expired {
+          display: block;
+        }
+        .expire-alert.expires-soon {
+          display: block;
+          background: $red;
+        }
+      }
+      .to-do-card__text {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        color: $black;
+        max-width: 432px;
+        max-height: 64px;
+        min-height: 64px;
+        overflow: hidden;
+      }
+      .to-do-card__deadline {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        span {
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 23px;
+          color: $grey;
+        }
+        .deadline-date {
+          background: #ededed;
+          border-radius: 15px;
+          padding: 4px 15px;
+          font-weight: 350;
+          font-size: 18px;
+          line-height: 24px;
+          color: $black;
+        }
+      }
+      .deadline-date.expires-soon {
+        background: #F6CACB;
+      }
+    }
+  }
+  .more-link {
+    margin-top: 60px;
+    display: block;
+    letter-spacing: 0;
+  }
+}
+
+
+
+
+

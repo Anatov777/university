@@ -8,36 +8,9 @@ html(lang="en")
   body
     .alert
       .alert__text You have 1 expired deadline and 11 deadlines expires soon.
-      a(href="#").alert__link View To-Do List
+      a(href="to-do.html").alert__link View To-Do List
       img(src="img/cross.svg", alt="Close").close
-          
-    header
-      .container
-        .header__content
-          img(src="img/Logo.webp", alt="Logo").logo
-          nav.main-nav
-            ul.main-nav__list
-              li
-                a(href="#") News
-              li
-                a(href="#") Events
-              li
-                a(href="#") My classes
-              li
-                a(href="#") My cases
-              li
-                a(href="#") My finances
-              li
-                a(href="#") My to-do list
-              li
-                a(href="#") My appointments
-              li
-                a(href="#") My documents
-          .notifications
-            img(src="img/power.webp", alt="Notifications").notifications__icon
-            .notifications__content
-              .notifications__text notifications
-          img(src="img/Account.webp", alt="Avatar").avatar
+    include header.pug
     section.search-wrapper
       .container
         .search-wrapper__content
@@ -119,26 +92,11 @@ html(lang="en")
             .news__text Cal State East Bay faculty, students spend month in Okinawa capturing histories
             .news__date May 3, 2020
         a(href="#").more-link More News
-    footer.footer
-      .footer__top
-        .container
-          img(src="img/Logo.webp", alt="Logo").logo
-          .address 25800 Carlos Bee Boulevard | Hayward, CA 94542<br>510-885-3000
-      .footer__bot
-        .container
-          .copyright © 2020 California State University, East Bay. All rights reserved.
-          .socials
-            .socials__item Facebook
-            .socials__item Twitter
-            .socials__item Instagram
-            .socials__item Pinterest
+    include footer.pug
 
-            
-
-                
-    
 
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
     script(src="js/libs.min.js")
     script(src="js/main.js")
+    script(src="js/header.js")
     
