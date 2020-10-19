@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="css/style.min.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header__content"><a href="index.html"><img class="logo" src="img/Logo.webp" alt="Logo"/></a>
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">My classes</a></li>
+              <li><a href="#">My cases</a></li>
+              <li><a href="#">My finances</a></li>
+              <li><a href="to-do.html">My to-do list</a></li>
+              <li><a href="#">My appointments</a></li>
+              <li><a href="#">My documents</a></li>
+            </ul>
+          </nav>
+          <div class="notifications"><img class="notifications__icon" src="img/power.webp" alt="Notifications"/><span class="notifications__nums"></span>
+            <div class="notifications__content">
+              <div class="notifications__empty">No Notifications</div>
+              <div class="notifications__header">
+                <div class="notifications__title">Notifications</div>
+                <div class="notifications__number">12</div>
+              </div>
+              <ul class="notifications__list" id="inline-popups">
+                <li><a class="expired" href="#test-popup-1" data-effect="mfp-zoom-in">Library Hold!</a>
+                  <div class="white-popup mfp-with-anim mfp-hide" id="test-popup-1">
+                    <div class="popup-type">Action</div>
+                    <div class="popup-text">Please pay overdue account balance to restore registration access and university services. View your account balance online through MyCSUEB. Contact Student Financial Services at (510-885-3767) if you have any questions.</div>
+                  </div>
+                </li>
+                <li><a href="#test-popup-2" data-effect="mfp-zoom-in">Past Due Account</a>
+                  <div class="white-popup mfp-with-anim mfp-hide" id="test-popup-2">
+                    <div class="popup-type">Action</div>
+                    <div class="popup-title">Fall Final Transcripts - Grad</div>
+                    <div class="popup-text">Please accept your admission in MyCSUEB by the deadline to secure your place in the entering class. This is a requirement of your admission. <p>Go to the MyCSUEB applicant tab and select Accept Admission (in the list of links on the left) to complete this.</p></div>
+                  </div>
+                </li>
+                <li><a href="#test-popup-3" data-effect="mfp-zoom-in">Probation</a>
+                  <div class="white-popup mfp-with-anim mfp-hide" id="test-popup-3">
+                    <div class="popup-type">Action</div>
+                    <div class="popup-text">Please pay overdue account balance to restore registration access and university services. View your account balance online through MyCSUEB. Contact Student Financial Services at (510-885-3767) if you have any questions.</div>
+                  </div>
+                </li>
+                <li><a href="#test-popup-4" data-effect="mfp-zoom-in">Past Due Account</a>
+                  <div class="white-popup mfp-with-anim mfp-hide" id="test-popup-4">
+                    <div class="popup-type">Action</div>
+                    <div class="popup-title">Fall Final Transcripts - Grad</div>
+                    <div class="popup-text">Please accept your admission in MyCSUEB by the deadline to secure your place in the entering class. This is a requirement of your admission. <p>Go to the MyCSUEB applicant tab and select Accept Admission (in the list of links on the left) to complete this.</p></div>
+                  </div>
+                </li>
+                <li><a href="#test-popup-5" data-effect="mfp-zoom-in">Probation</a>
+                  <div class="white-popup mfp-with-anim mfp-hide" id="test-popup-5">
+                    <div class="popup-type">Action</div>
+                    <div class="popup-text">Please pay overdue account balance to restore registration access and university services. View your account balance online through MyCSUEB. Contact Student Financial Services at (510-885-3767) if you have any questions.</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="profile"><img class="avatar" src="img/Account.webp" alt="Avatar"/>
+            <div class="profile__content">
+              <div class="profile__item">My Account</div>
+              <div class="profile__item">User Settings</div>
+              <div class="profile__item">User Profile</div>
+              <div class="profile__item">Contact Support</div>
+              <div class="profile__item">News</div>
+            </div>
+          </div><img class="burger" src="img/burger.svg" alt="Burger Menu"/>
+        </div>
+      </div>
+    </header>
+    <div class="burger-menu">
+      <nav class="main-nav"><img class="burger-menu__close" src="img/burger-close.svg" alt="Burger Close"/>
+        <ul class="main-nav__list">
+          <li><a href="#">News</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">My classes</a></li>
+          <li><a href="#">My cases</a></li>
+          <li><a href="#">My finances</a></li>
+          <li><a href="to-do.html">My to-do list</a></li>
+          <li><a href="#">My appointments</a></li>
+          <li><a href="#">My documents</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="to-do-list">
+      <div class="container">
+        <div class="title-wrapper">
+          <h2>My To-Do List</h2>
+          <div class="title-notes"><a class="title-notes__item" href="#">Expired</a><a class="title-notes__item" href="#">Expires Soon</a></div>
+        </div>
+        <div class="filter">
+          <button class="active">Admisson</button>
+          <button>Finance</button>
+        </div>
+        <div class="to-do-list__content">
+          <div class="to-do-card">
+            <div class="to-do-card__title">
+              <div class="sender expired">Administration</div>
+              <div class="expire-alert expired">Expired</div>
+            </div>
+            <div class="to-do-card__text">Submitting documents to&nbsp;the Cal State East Bay documents to&nbsp;the Cal State...</div>
+            <div class="to-do-card__deadline"><img src="img/clock.svg" alt="Clock icon"/><span>Deadline:</span>
+              <div class="deadline-date">May 24, 2020</div>
+            </div>
+          </div>
+          <div class="to-do-card">
+            <div class="to-do-card__title">
+              <div class="sender">Administration</div>
+              <div class="expire-alert expires-soon">Expires Soon</div>
+            </div>
+            <div class="to-do-card__text">Tuition per Semester</div>
+            <div class="to-do-card__deadline"><img src="img/clock.svg" alt="Clock icon"/><span>Deadline:</span>
+              <div class="deadline-date expires-soon">May 24, 2020</div>
+            </div>
+          </div>
+          <div class="to-do-card">
+            <div class="to-do-card__title">
+              <div class="sender">Administration</div>
+              <div class="expire-alert expires-soon">Expires Soon</div>
+            </div>
+            <div class="to-do-card__text">Submitting documents to the Cal State East Bay</div>
+            <div class="to-do-card__deadline"><img src="img/clock.svg" alt="Clock icon"/><span>Deadline:</span>
+              <div class="deadline-date expires-soon">May 24, 2020</div>
+            </div>
+          </div>
+          <div class="to-do-card">
+            <div class="to-do-card__title">
+              <div class="sender">Administration</div>
+              <div class="expire-alert">Expires Soon</div>
+            </div>
+            <div class="to-do-card__text">Submitting documents to the Cal State East Bay</div>
+            <div class="to-do-card__deadline"><img src="img/clock.svg" alt="Clock icon"/><span>Deadline:</span>
+              <div class="deadline-date expires-soon">May 24, 2020</div>
+            </div>
+          </div>
+          <div class="to-do-card">
+            <div class="to-do-card__title">
+              <div class="sender">Administration</div>
+              <div class="expire-alert">Expires Soon</div>
+            </div>
+            <div class="to-do-card__text">Submitting documents to the Cal State East Bay</div>
+            <div class="to-do-card__deadline"><img src="img/clock.svg" alt="Clock icon"/><span>Deadline:</span>
+              <div class="deadline-date expires-soon">May 24, 2020</div>
+            </div>
+          </div>
+          <div class="to-do-card">
+            <div class="to-do-card__title">
+              <div class="sender">Administration</div>
+              <div class="expire-alert">Expires Soon</div>
+            </div>
+            <div class="to-do-card__text">Submitting documents to the Cal State East Bay</div>
+            <div class="to-do-card__deadline"><img src="img/clock.svg" alt="Clock icon"/><span>Deadline:</span>
+              <div class="deadline-date expires-soon">May 24, 2020</div>
+            </div>
+          </div>
+          <div class="to-do-card">
+            <div class="to-do-card__title">
+              <div class="sender">Administration</div>
+              <div class="expire-alert">Expires Soon</div>
+            </div>
+            <div class="to-do-card__text">Submitting documents to the Cal State East Bay</div>
+            <div class="to-do-card__deadline"><img src="img/clock.svg" alt="Clock icon"/><span>Deadline:</span>
+              <div class="deadline-date expires-soon">May 24, 2020</div>
+            </div>
+          </div>
+          <div class="to-do-card">
+            <div class="to-do-card__title">
+              <div class="sender">Administration</div>
+              <div class="expire-alert">Expires Soon</div>
+            </div>
+            <div class="to-do-card__text">Submitting documents to the Cal State East Bay</div>
+            <div class="to-do-card__deadline"><img src="img/clock.svg" alt="Clock icon"/><span>Deadline:</span>
+              <div class="deadline-date expires-soon">May 24, 2020</div>
+            </div>
+          </div>
+        </div><a class="more-link" href="#">More To-Dos</a>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container"><img class="logo" src="img/Logo.webp" alt="Logo"/>
+          <div class="address">25800 Carlos Bee Boulevard | Hayward, CA 94542<br>510-885-3000</div>
+        </div>
+      </div>
+      <div class="footer__bot">
+        <div class="container">
+          <div class="copyright">© 2020 California State University, East Bay. All rights reserved.</div>
+          <div class="socials">
+            <div class="socials__item">Facebook</div>
+            <div class="socials__item">Twitter</div>
+            <div class="socials__item">Instagram</div>
+            <div class="socials__item">Pinterest</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/to-do.js"></script>
+    <script src="js/header.js"></script>
+  </body>
+</html>
