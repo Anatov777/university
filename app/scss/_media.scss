@@ -142,6 +142,10 @@
     height: 100%;
     padding: 130px 0;
   }
+  // Notifications
+  header .header__content .notifications .notifications__content {
+    min-width: 220px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -232,8 +236,20 @@
 }
 
 @media (max-width: 360px) {
+  header .container {
+    margin: 0;
+    width: 100%;
+  }
+  header .header__content {
+    width: 100%;
+    gap: 30px;
+  }
+  header .header__content .profile .avatar,
+  header .header__content .burger {
+    margin: 0;
+  }
   header .header__content .notifications {
-    margin-left: 20px;
+    margin-left: auto;
   }
   .to-do-list .to-do-list__content {
     grid-template-columns: repeat(auto-fill, 300px);
