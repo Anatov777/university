@@ -10,8 +10,8 @@ $(document).ready(function(){
     document.querySelector('.notifications__nums').innerHTML = listLength;
     listLength === 0 ? document.querySelector('.notifications__content').classList.add('empty') : document.querySelector('.notifications__content').classList.remove('empty');
     document.querySelector('.notifications__number').innerHTML = listLength;
-});
-// Popups
+  });
+  // Popups
   $('#inline-popups').magnificPopup({
     delegate: 'a',
     removalDelay: 500, //delay removal by X to allow out-animation
@@ -23,14 +23,13 @@ $(document).ready(function(){
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 
-// Burger menu trigger
-// $('.burger').on('click', function(){
-//   if (document.documentElement.clientWidth <= 1299){
-//       document.querySelector(".main-nav").append(document.querySelector(".burger-menu"));
-//       document.querySelector(".burger-menu").style.display = "block";
-//   }
+  // Burger menu trigger
+  document.querySelector('.burger').addEventListener('click', function(){
+    document.querySelector('.burger-menu').classList.add('opened');
+  })
+  document.querySelector('.burger-menu__close').addEventListener('click', function(){
+    document.querySelector('.burger-menu').classList.remove('opened');
+  })
   
-//   $('.main-nav').slideToggle();
-// });
 
 });

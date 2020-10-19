@@ -1,6 +1,247 @@
 @media (max-width: 1199px) {
+  .header__content > .main-nav {
+    display: none;
+  }
   .burger {
     display: block !important;
     margin-left: 30px;
+  }
+  .burger-menu {
+    display: block !important;
+  }
+}
+
+@media (max-width: 790px) {
+  .footer__top .address {
+    margin-left: 38px;
+  }
+  .footer__bot > .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+  .alert {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .alert__link {
+    margin-left: 0 !important;
+  }
+  .alert {
+    padding: 20px 0;
+  }
+  // To do
+  .to-do-list .to-do-list__content .to-do-card {
+    max-width: 320px;
+    max-height: 186px;
+  }
+  .to-do-list .to-do-list__content .to-do-card .to-do-card__title .sender {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .to-do-list .to-do-list__content .to-do-card .to-do-card__text {
+    font-size: 18px;
+    line-height: 24px;
+    min-height: 48px;
+    max-height: 48px;
+  }
+  .to-do-list .to-do-list__content .to-do-card {
+    padding: 20px;
+  }
+  .to-do-list
+    .to-do-list__content
+    .to-do-card
+    .to-do-card__title
+    .expire-alert {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .to-do-list .to-do-list__content .to-do-card .to-do-card__deadline span {
+    display: none;
+  }
+  .to-do-list
+    .to-do-list__content
+    .to-do-card
+    .to-do-card__deadline
+    .deadline-date {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .to-do-list .to-do-list__content {
+    grid-template-columns: repeat(auto-fill, 320px);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .alert__text {
+    max-width: 252px;
+  }
+  .close {
+    right: 20px !important;
+  }
+  .slick-arrow {
+    display: none;
+  }
+  .slider {
+    margin-left: 0 !important;
+  }
+  .navigation-btns {
+    min-width: 280px !important;
+  }
+  .event__card {
+    max-width: 240px !important;
+    min-width: 240px !important;
+  }
+  .slider__item {
+    max-width: 240px !important;
+    min-width: 240px !important;
+  }
+  .slick-slide {
+    max-width: 240px !important;
+    min-width: 240px !important;
+  }
+  .events .slider .slider__item .event-card {
+    height: 273px;
+  }
+  .events
+    .slider
+    .slider__item
+    .event-card
+    .event-card__text
+    .event-card__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .events
+    .slider
+    .slider__item
+    .event-card
+    .event-card__text
+    .event-card__subtitle {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .events .slider .slider__item .event-card .note .note__date {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .events .slider .slider__item .event-card .note .note__time {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .title-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+  .search-wrapper {
+    background: url(../img/students2.jpg) center no-repeat;
+    background-size: cover;
+    min-height: 352px;
+    height: 100%;
+    padding: 130px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    width: 112px;
+    height: 25px;
+  }
+  // News
+  .news .news__content {
+    grid-template-columns: none;
+  }
+  .title-wrapper h2 {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .title-wrapper a {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .news .news__content .news__item .news__title,
+  .news .news__content .news__item .news__date {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+  .news .news__content .news__item .news__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .more-link {
+    margin-top: 40px;
+  }
+  .news {
+    padding-bottom: 80px;
+  }
+  // Footer
+  .footer .footer__bot .socials .socials__item {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .footer .footer__bot .copyright {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .address {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  // Nav btns
+  .navigation-btns .nav-by-btns .tile {
+    width: 280px;
+    height: 100px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .navigation-btns .nav-by-btns .tile::before {
+    width: 10px;
+    height: 10px;
+    right: 50px;
+  }
+  .navigation-btns .nav-by-btns .tile::after {
+    width: 30px;
+    height: 30px;
+  }
+  .nav-by-btns {
+    grid-template-columns: none !important;
+  }
+  .navigation-btns {
+    padding: 60px 0;
+  }
+  .navigation-btns .nav-by-btns {
+    row-gap: 30px;
+  }
+  // Search
+  .search-wrapper .search-wrapper__content .search .search__input {
+    height: 35px;
+    border-radius: 10px;
+  }
+  .search-wrapper .search-wrapper__content .search .search-icon {
+    width: 14px;
+    height: 14px;
+    background-size: cover;
+  }
+  .search-wrapper .search-wrapper__content .search__title {
+    font-size: 28px;
+    line-height: 37px;
+  }
+}
+
+@media (max-width: 360px) {
+  header .header__content .notifications {
+    margin-left: 20px;
+  }
+  .to-do-list .to-do-list__content {
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 20px;
+  }
+  .to-do-list .more-link {
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
