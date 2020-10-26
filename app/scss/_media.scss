@@ -31,9 +31,13 @@
     padding: 20px 0;
   }
   // To do
+  .to-do-list__content {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+    grid-template-rows: repeat(auto-fill, 186px) !important;
+    grid-gap: 20px !important;
+  }
   .to-do-list .to-do-list__content .to-do-card {
-    max-width: 320px;
-    max-height: 186px;
+    margin: 0 auto;
   }
   .to-do-list .to-do-list__content .to-do-card .to-do-card__title .sender {
     font-size: 14px;
@@ -66,10 +70,6 @@
     .deadline-date {
     font-size: 18px;
     line-height: 24px;
-  }
-  .to-do-list .to-do-list__content {
-    grid-template-columns: repeat(auto-fill, 320px);
-    justify-content: center;
   }
 }
 
@@ -250,10 +250,6 @@
   }
   header .header__content .notifications {
     margin-left: auto;
-  }
-  .to-do-list .to-do-list__content {
-    grid-template-columns: repeat(auto-fill, 300px);
-    grid-gap: 20px;
   }
   .to-do-list .more-link {
     margin-top: 40px;
