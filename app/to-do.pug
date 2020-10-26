@@ -2,19 +2,20 @@
 html(lang="en")
   head
     meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title My To-Do List
-    link(rel="stylesheet", href="css/style.min.css")
-    link(rel="stylesheet", href="css/to-do.min.css")
+    link(rel="stylesheet" href="css/style.min.css")
+    link(rel="stylesheet" href="css/to-do.min.css")
+    link(rel="icon" href="img/favicon.ico" type="image/x-icon")
   body
     include header.pug
     .to-do-list
       .container
         .title-wrapper
-            h2 My To-Do List
-            .title-notes
-              a(href="#").title-notes__item Expired
-              a(href="#").title-notes__item Expires Soon
+          h2 My To-Do List
+          .title-notes
+            a(href="#").title-notes__item Expired
+            a(href="#").title-notes__item Expires Soon
         .filter
           button.active Admisson
           button Finance
@@ -25,7 +26,7 @@ html(lang="en")
               .expire-alert.expired Expired
             .to-do-card__text Submitting documents to&nbsp;the Cal State East Bay documents to&nbsp;the Cal State...
             .to-do-card__deadline
-              img(src="img/clock.svg", alt="Clock icon")
+              img(src="img/clock.svg" alt="Clock icon")
               span Deadline:
               .deadline-date May 24, 2020
           .to-do-card
@@ -34,7 +35,7 @@ html(lang="en")
               .expire-alert.expires-soon Expires Soon
             .to-do-card__text Tuition per Semester
             .to-do-card__deadline
-              img(src="img/clock.svg", alt="Clock icon")
+              img(src="img/clock.svg" alt="Clock icon")
               span Deadline:
               .deadline-date.expires-soon May 24, 2020
           .to-do-card
@@ -43,7 +44,7 @@ html(lang="en")
               .expire-alert.expires-soon Expires Soon
             .to-do-card__text Submitting documents to the Cal State East Bay
             .to-do-card__deadline
-              img(src="img/clock.svg", alt="Clock icon")
+              img(src="img/clock.svg" alt="Clock icon")
               span Deadline:
               .deadline-date.expires-soon May 24, 2020
           .to-do-card
@@ -52,7 +53,7 @@ html(lang="en")
               .expire-alert Expires Soon
             .to-do-card__text Submitting documents to the Cal State East Bay
             .to-do-card__deadline
-              img(src="img/clock.svg", alt="Clock icon")
+              img(src="img/clock.svg" alt="Clock icon")
               span Deadline:
               .deadline-date.expires-soon May 24, 2020
           .to-do-card
@@ -61,7 +62,7 @@ html(lang="en")
               .expire-alert Expires Soon
             .to-do-card__text Submitting documents to the Cal State East Bay
             .to-do-card__deadline
-              img(src="img/clock.svg", alt="Clock icon")
+              img(src="img/clock.svg" alt="Clock icon")
               span Deadline:
               .deadline-date.expires-soon May 24, 2020
           .to-do-card
@@ -70,7 +71,7 @@ html(lang="en")
               .expire-alert Expires Soon
             .to-do-card__text Submitting documents to the Cal State East Bay
             .to-do-card__deadline
-              img(src="img/clock.svg", alt="Clock icon")
+              img(src="img/clock.svg" alt="Clock icon")
               span Deadline:
               .deadline-date.expires-soon May 24, 2020
           .to-do-card
@@ -79,7 +80,7 @@ html(lang="en")
               .expire-alert Expires Soon
             .to-do-card__text Submitting documents to the Cal State East Bay
             .to-do-card__deadline
-              img(src="img/clock.svg", alt="Clock icon")
+              img(src="img/clock.svg" alt="Clock icon")
               span Deadline:
               .deadline-date.expires-soon May 24, 2020
           .to-do-card
@@ -88,7 +89,7 @@ html(lang="en")
               .expire-alert Expires Soon
             .to-do-card__text Submitting documents to the Cal State East Bay
             .to-do-card__deadline
-              img(src="img/clock.svg", alt="Clock icon")
+              img(src="img/clock.svg" alt="Clock icon")
               span Deadline:
               .deadline-date.expires-soon May 24, 2020
         a(href="#").more-link More To-Dos
